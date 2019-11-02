@@ -53,6 +53,8 @@ body {
 }
 .btn-large:hover{
   background: white !important;
+  color: red;
+  border: 1px solid red;
 }
 
 .span-block {

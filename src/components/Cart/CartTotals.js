@@ -15,7 +15,7 @@ const CartTotals = ({
                 <div className="row">
                     <div className="col s10 offset-s2 l5 offset-l7 right-align">
                         <button 
-                            className="btn-large waves-effect waves-light red lighten-1"
+                            className="btn-large waves-effect waves-light red "
                             onClick={() => clearCart()}    
                             >
                             Clear Cart
