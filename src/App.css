@@ -1,22 +1,89 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
 }
-
-.App-logo {
-  height: 40vmin;
+body {
+  font-family: 'Oswald', sans-serif;
+  background: var(--mainWhite);
+  color: var(--mainDark);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ml-2 {
+  margin-left: 2rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mr-1 {
+  margin-right: 1rem !important;
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+.text-title {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .3rem;
+  text-transform: capitalize;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.cart-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.item-count {
+  margin: 0 1rem;
+}
+.fa-trash {
+  color: #b81111;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cartFont {
+  font-size: 1.5rem;
+}
+.btn-large:hover{
+  background: white !important;
+}
+
+.span-block {
+  display: inline-block;
+}
+.title-font{
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+i.large {
+  font-size: 40px !important;
+}
+.sidenav{
+  background: rgb(0,0,0,0.7) !important;
   color: white;
 }
+.sidenav h3 {
+ text-decoration: underline;
+ margin-bottom: 2rem;
+}
+.sidenav a, .sidenav i{
+  color: white !important;
+  font-size: 1.5rem !important;
+}
 
-.App-link {
-  color: #09d3ac;
+.disabled-react-link {
+  cursor: initial;
+}
+
+@media only screen and (max-width: 992px) {
+  .row{
+    display: block;
+  }
 }
