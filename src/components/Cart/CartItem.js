@@ -40,8 +40,8 @@ const CartItem = ({
                             <span><i class="fas fa-trash" onClick={() => removeItem(id)}></i></span>
                     </div>
                     <div className="col s10 l2 center-align">
-                            <span className="hide-on-large-only left-align span-block mt-1">{`Item Total:  $${total}`}</span>
-                            {`$${total}`}
+                            <span className="hide-on-large-only left-align span-block mt-1">Item Total: </span>
+                            {` $${total}`}
                     </div>
                 </div>
             </div>

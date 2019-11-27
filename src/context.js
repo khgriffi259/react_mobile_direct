@@ -135,7 +135,7 @@ class ProductProvider extends Component {
             }
         }
         
-        // get subtotal, tax, and total. then set state
+        // recalculate subtotal, tax, and total. then set state
         const subTotal = this.getSubTotal(newCartItems)
         const tax = this.getTax(subTotal)
         const total = this.getTotal(subTotal, tax)
@@ -143,6 +143,7 @@ class ProductProvider extends Component {
         this.setState({
             cart: newCartItems,
             subTotal,
+            tax,
             total
         })       
     }
